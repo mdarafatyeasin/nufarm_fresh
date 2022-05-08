@@ -7,7 +7,7 @@ const Inventorys = () => {
     return (
         <div>
             {
-                inventorys.map(inventory => <Inventory inventory={inventory}></Inventory>)
+                inventorys.map(inventory => <Inventory key={inventory._id} inventory={inventory}></Inventory>)
             }
         </div>
     );

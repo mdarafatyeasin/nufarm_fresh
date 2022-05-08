@@ -6,8 +6,8 @@ import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 
 const Header = () => {
-    const [ user ] = useAuthState(auth)
-    const handleLogOut =() =>{
+    const [user] = useAuthState(auth)
+    const handleLogOut = () => {
         signOut(auth)
     }
     return (
@@ -19,14 +19,15 @@ const Header = () => {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
                             <Nav.Link as={Link} to="/inventorys">Manage Inventorys</Nav.Link>
-                            <Nav.Link href="#pricing">Pricing</Nav.Link>
+                            <Nav.Link href="#pricing">Add Item</Nav.Link>
                         </Nav>
                         <Nav>
-                        {
-                                user?
-                                <button className='log-out-button' onClick={handleLogOut}>Log Out</button>
-                                :
-                                <Nav.Link as={Link} to="login">Log In</Nav.Link>}
+                            {
+                                user ?
+                                    <button className='log-out-button' onClick={handleLogOut}>Log Out</button>
+                                    :
+                                    <Nav.Link as={Link} to="login">Log In</Nav.Link>
+                            }
 
                             <Nav.Link eventKey={2} as={Link} to="/blogs">
                                 Blogs

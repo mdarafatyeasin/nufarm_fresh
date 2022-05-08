@@ -14,6 +14,9 @@ const SocialLogin = () => {
             <p>Error: {error.message}</p>
         </div>
     }
+    if (loading) {
+        return <p>Loading...</p>;
+      }
     if (user) {
         navigate('/home')
     }

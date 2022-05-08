@@ -1,7 +1,7 @@
 [
     {
       "id": 0,
-      "picture": "https://drive.google.com/file/d/1jRqcyHa7T42qsl-EWXgwFfsObU_E7Wlh/view?usp=sharing",
+      "picture": "https://i.ibb.co/86ZjgqJ/animal.png",
       "name": "Animal",
       "description": "The term wildlife is a collective term for the wild and native plants and animals of a region.",
       "price": 800,
@@ -10,7 +10,7 @@
     },
     {
       "id": 1,
-      "picture": "https://drive.google.com/file/d/1jS-bitCjHV8Aowzj_kghIkzFX0FYZrK-/view?usp=sharing",
+      "picture": "https://i.ibb.co/86ZjgqJ/animal.png",
       "name": "Aquatic animals",
       "description": "Let us take a close look at these wonderful masterpieces of photography.",
       "price": 700,
@@ -19,7 +19,7 @@
     },
     {
       "id": 2,
-      "picture": "https://drive.google.com/file/d/1MOM-mxoxlMhNBrzQ68P_K2hr2bt7cS4m/view?usp=sharing",
+      "picture": "https://i.ibb.co/86ZjgqJ/animal.png",
       "name": "Nature",
       "description": "When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.",
       "price": 400,

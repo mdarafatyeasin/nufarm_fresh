@@ -14,7 +14,7 @@ const Home = () => {
             <Banner></Banner>
             {/* inven item*/}
             {
-                inventorys.slice(0 ,2).map(inventory => <Item inventory = {inventory}></Item>)
+                inventorys.slice(0 ,2).map(inventory => <Item key={inventory._id} inventory = {inventory}></Item>)
             }
 
             {/* inventory button */}
