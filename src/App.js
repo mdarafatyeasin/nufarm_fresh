@@ -8,6 +8,7 @@ import Signup from './Components/Login/Signup/Signup'
 import Blog from './Components/Blog/Blog'
 import Inventorys from './Components/Inventorys/Inventorys/Inventorys';
 import RuquairAuth from './Components/Login/RequairAuth/RuquairAuth';
+import UpdateStoke from './Components/UpdateStoke/UpdateStoke';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
+        <Route path='/update/:updateId' element= {<UpdateStoke></UpdateStoke>}></Route>
         <Route path='/blogs' element={<Blog></Blog>}></Route>
         <Route path='/inventorys' element={
           <RuquairAuth>
