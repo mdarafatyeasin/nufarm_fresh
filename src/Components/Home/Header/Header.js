@@ -7,11 +7,11 @@ const Header = () => {
         <div>
             <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
                 <Container>
-                    <Navbar.Brand href="#home">NuFarm Fresh</Navbar.Brand>
+                    <Navbar.Brand as={Link} to='home'>NuFarm Fresh</Navbar.Brand>
                     <Navbar.Toggle aria-controls="responsive-navbar-nav" />
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="me-auto">
-                            <Nav.Link as={Link} to="/home">Features</Nav.Link>
+                            <Nav.Link as={Link} to="/inventorys">Manage Inventorys</Nav.Link>
                             <Nav.Link href="#pricing">Pricing</Nav.Link>
                         </Nav>
                         <Nav>

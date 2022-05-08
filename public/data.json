@@ -1,0 +1,29 @@
+[
+    {
+      "id": 0,
+      "picture": "https://drive.google.com/file/d/1jRqcyHa7T42qsl-EWXgwFfsObU_E7Wlh/view?usp=sharing",
+      "name": "Animal",
+      "comment": "The term wildlife is a collective term for the wild and native plants and animals of a region.",
+      "Price": 800,
+      "quantity": 10,
+      "supplier": "Rakib Mollik"
+    },
+    {
+      "id": 1,
+      "picture": "https://drive.google.com/file/d/1jS-bitCjHV8Aowzj_kghIkzFX0FYZrK-/view?usp=sharing",
+      "name": "Aquatic animals",
+      "comment": "Let us take a close look at these wonderful masterpieces of photography.",
+      "Price": 700,
+      "quantity": 10,
+      "supplier": "Shakib Mollik"
+    },
+    {
+      "id": 2,
+      "picture": "https://drive.google.com/file/d/1MOM-mxoxlMhNBrzQ68P_K2hr2bt7cS4m/view?usp=sharing",
+      "name": "Nature",
+      "comment": "When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.",
+      "Price": 400,
+      "quantity": 10,
+      "supplier": "Midul Mollik"
+    }
+  ]
