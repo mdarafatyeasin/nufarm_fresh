@@ -1,0 +1,25 @@
+.login-container{
+    width: 600px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+.login-title{
+    text-align: center;
+    margin-bottom: 30px;
+}
+.logIn-button{
+    width: 50%;
+}
+.logIn-container{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.resat-button{
+    border: none;
+    background-color: Transparent;
+    color: rgb(0, 87, 0);
+}

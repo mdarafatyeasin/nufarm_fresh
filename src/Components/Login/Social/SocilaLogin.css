@@ -1,0 +1,25 @@
+.divider{
+    height: 1px;
+    width: 45%;
+    background-color: black;
+}
+.divider-component{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.social-signin-button{
+    background-color: white;
+    width: 50%;
+    margin: auto;
+    padding: 8px;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    border-radius: 10px;
+}
+.social-signin-button img{
+    margin-right: 20px;
+}
+.social-container{
+    display: flex;
+}
