@@ -1,0 +1,14 @@
+.manage-inv-button-section{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    margin-top: 20px;
+}
+.manage-inv-button{
+    text-decoration: none;
+    padding: 10px 40px;
+    background-color: rgb(44, 47, 68);
+    color: whitesmoke;
+    border-radius: 8px;
+    
+}
