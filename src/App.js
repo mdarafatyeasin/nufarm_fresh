@@ -9,6 +9,7 @@ import Blog from './Components/Blog/Blog'
 import Inventorys from './Components/Inventorys/Inventorys/Inventorys';
 import RuquairAuth from './Components/Login/RequairAuth/RuquairAuth';
 import UpdateStoke from './Components/UpdateStoke/UpdateStoke';
+import AddItem from './Components/AddItem/AddItem';
 
 function App() {
   return (
@@ -24,6 +25,11 @@ function App() {
         <Route path='/inventorys' element={
           <RuquairAuth>
             <Inventorys></Inventorys>
+          </RuquairAuth>
+        }></Route>
+        <Route path='/additem' element={
+          <RuquairAuth>
+            <AddItem></AddItem>
           </RuquairAuth>
         }></Route>
       </Routes>
