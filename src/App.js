@@ -10,6 +10,7 @@ import Inventorys from './Components/Inventorys/Inventorys/Inventorys';
 import RuquairAuth from './Components/Login/RequairAuth/RuquairAuth';
 import UpdateStoke from './Components/UpdateStoke/UpdateStoke';
 import AddItem from './Components/AddItem/AddItem';
+import NotFound from './Components/NotFound/NotFound';
 
 function App() {
   return (
@@ -20,8 +21,14 @@ function App() {
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/login' element={<Login></Login>}></Route>
         <Route path='/signup' element={<Signup></Signup>}></Route>
-        <Route path='/update/:updateId' element= {<UpdateStoke></UpdateStoke>}></Route>
         <Route path='/blogs' element={<Blog></Blog>}></Route>
+        <Route path='/update/:updateId' element={
+
+          <RuquairAuth>
+            <UpdateStoke></UpdateStoke>
+          </RuquairAuth>
+
+        }></Route>
         <Route path='/inventorys' element={
           <RuquairAuth>
             <Inventorys></Inventorys>
@@ -32,6 +39,7 @@ function App() {
             <AddItem></AddItem>
           </RuquairAuth>
         }></Route>
+        <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
 
       {/* footer */}
