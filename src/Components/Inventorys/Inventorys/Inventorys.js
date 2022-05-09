@@ -8,7 +8,7 @@ const Inventorys = () => {
     const handleDelete = id => {
         const confirm = window.confirm('Are you sure?');
         if (confirm) {
-            const url = `http://localhost:5000/product/${id}`
+            const url = `https://polar-brushlands-69402.herokuapp.com/product/${id}`
                 fetch(url, {
                     method: 'DELETE'
                 })

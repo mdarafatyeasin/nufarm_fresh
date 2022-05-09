@@ -8,7 +8,7 @@ const UpdateStoke = () => {
     const { picture, name, description, price, quantity, supplier } = product
 
     useEffect(() => {
-        const url = `http://localhost:5000/product/${updateId}`
+        const url = `https://polar-brushlands-69402.herokuapp.com/product/${updateId}`
         fetch(url)
             .then(res => res.json())
             .then(data => setProduct(data))
@@ -20,7 +20,7 @@ const UpdateStoke = () => {
         newQuantity = quantity - 1
         console.log(newQuantity)
         const updateQuantity = {newQuantity}
-        const url = `http://localhost:5000/product/${updateId}`
+        const url = `https://polar-brushlands-69402.herokuapp.com/product/${updateId}`
         console.log(url)
             fetch(url, {
                 method: 'PUT',
