@@ -1,8 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import useInventorys from '../../../Hooks/useInventorys';
-
 import Banner from '../Banner/Banner';
+import Client from '../Client/Client';
 import Item from '../Item/Item';
 import './Home.css'
 
@@ -24,6 +24,11 @@ const Home = () => {
             <div className="manage-inv-button-section">
                 <Link className='manage-inv-button' to='/inventorys'>Manage Inventorys</Link>
             </div>
+            <div>
+                {/* <Client></Client> */}
+                <Client></Client>
+            </div>
+            
         </div>
     );
 };

@@ -4,6 +4,7 @@ import { useAuthState } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init'
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
+import './Header.css'
 
 const Header = () => {
     const [user] = useAuthState(auth)

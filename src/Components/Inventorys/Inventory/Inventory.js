@@ -1,5 +1,6 @@
 import React from 'react';
 import useInventorys from '../../../Hooks/useInventorys';
+import './Incentory.css'
 
 const Inventory = ({ inventory }) => {
     const [inventorys, setInventorys] = useInventorys()
@@ -33,8 +34,8 @@ const Inventory = ({ inventory }) => {
                     <h4><strong>Price : {price}</strong></h4>
                     <h5><strong>Quantity : {quantity}</strong></h5>
                     <h5>Supplier : {supplier}</h5>
-                    <button onClick={() => handleDelete(_id)}>Delet</button>
                 </div>
+                    <button className='delete-button' onClick={() => handleDelete(_id)}>Delete</button>
             </div>
         </div>
     );
