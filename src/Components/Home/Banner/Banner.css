@@ -6,6 +6,48 @@
     width: 80%;
     margin: auto;
     justify-content: space-between;
-    margin-top: 50px;
     align-items: center;
+}
+.web-name{
+    color: rgb(45, 140, 45);
+    font-size: 60px;
+    
+}
+.banner-text{
+    width: 50%;
+}
+.banner-img{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner-img img{
+    width: 100%;
+}
+.about-button{
+    padding: 7px 15px;
+    border-radius: 50px;
+    margin-top: 30px;
+}
+.about-button:hover {
+    background-color: rgb(44, 47, 68);
+    color: white;
+}
+
+
+/* ------------resposcive part----------- */
+@media only screen and (max-width: 600px){
+    .banner{
+        display: block;
+    }
+    .banner-text{
+        width: 100%;
+    }
+    .banner-img{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 }

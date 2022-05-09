@@ -1,8 +1,26 @@
 import React from 'react';
+import useInventorys from '../../../Hooks/useInventorys';
 
-const Inventory = ({inventory}) => {
-    // console.log(inventory)
-    const {id, picture, name, description, price, quantity, supplier} = inventory
+const Inventory = ({ inventory }) => {
+    const [inventorys, setInventorys] = useInventorys()
+    const { _id, picture, name, description, price, quantity, supplier } = inventory
+
+
+    const handleDelete = id => {
+        const proceed = window.confirm('Are you shure you want to delete?')
+        if (proceed) {
+            const url = `http://localhost:5000/product/${id}`
+            fetch(url, {
+                method: 'DELETE',
+            })
+                .then(res => res.json())
+                .then(data => {
+                    const remaining = inventorys.filter(inventory => inventory._id !== id)
+                    setInventorys(remaining)
+                })
+        }
+    }
+
     return (
         <div>
             <div className="caed">
@@ -15,7 +33,7 @@ const Inventory = ({inventory}) => {
                     <h4><strong>Price : {price}</strong></h4>
                     <h5><strong>Quantity : {quantity}</strong></h5>
                     <h5>Supplier : {supplier}</h5>
-                    <button>Delet</button>
+                    <button onClick={() => handleDelete(_id)}>Delet</button>
                 </div>
             </div>
         </div>

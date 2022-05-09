@@ -4,7 +4,7 @@ import { useForm } from "react-hook-form";
 const AddItem = () => {
     const { register, handleSubmit } = useForm();
     const onSubmit = data =>{
-        console.log(data);
+        // console.log(data);
         const url = `http://localhost:5000/product`
         fetch(url, {
             method: 'POST',
@@ -15,7 +15,7 @@ const AddItem = () => {
         })
         .then(res => res.json())
         .then(result =>{
-            console.log(result)
+            // console.log(result)
         } )
     } 
         
