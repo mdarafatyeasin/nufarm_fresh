@@ -1,5 +1,6 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
+import './Item.css'
 
 const Item = ({inventory}) => {
     const {_id, picture, name, description, price, quantity, supplier} = inventory
@@ -16,12 +17,12 @@ const Item = ({inventory}) => {
                 </div>
                 <div className="card-text">
                     <h3>Name : {name}</h3>
-                    <p>Description: {description}</p>
-                    <h4><strong>Price : {price}</strong></h4>
+                    <p><strong>Description:</strong> {description}</p>
+                    <h4><strong>Price (1 kg) : {price}</strong></h4>
                     <h5><strong>Quantity : {quantity}</strong></h5>
                     <h5>Supplier : {supplier}</h5>
-                    <button onClick={()=>navigateUpdateStoke(_id)}>Update Stoke</button>
                 </div>
+                    <button className='update-button' onClick={()=>navigateUpdateStoke(_id)}>Update Stoke</button>
             </div>
         </div>
     );

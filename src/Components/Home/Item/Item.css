@@ -1,0 +1,30 @@
+.caed{
+    border: 2px solid rgb(122, 122, 122);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.update-button{
+    width: 100%;
+    border: none;
+    background-color: rgb(175, 224, 255);
+    border-radius: 0px 0px 10px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50px;
+}
+.button-box{
+    display: flex;
+    justify-content: center;
+    margin-top: auto;
+}
+
+.item-img img{
+    width: 50%;
+    border-radius: 10px;
+}
+.card-text{
+    padding-left: 10px;
+}
+
+

@@ -7,15 +7,18 @@ import Item from '../Item/Item';
 import './Home.css'
 
 const Home = () => {
-    const [inventorys]= useInventorys()
+    const [inventorys] = useInventorys()
     // console.log(inventorys)
     return (
         <div>
             <Banner></Banner>
             {/* inven item*/}
-            {
-                inventorys.slice(0 ,2).map(inventory => <Item key={inventory._id} inventory = {inventory}></Item>)
-            }
+            <h1 className='item-title'><u>Items</u></h1>
+            <div className="item-container">
+                {
+                    inventorys.slice(0, 3).map(inventory => <Item key={inventory._id} inventory={inventory}></Item>)
+                }
+            </div>
 
             {/* inventory button */}
             <div className="manage-inv-button-section">
